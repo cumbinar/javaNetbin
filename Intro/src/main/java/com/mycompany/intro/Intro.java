@@ -17,5 +17,17 @@ public class Intro {
         int miVariableEntera = 5838;
         System.out.println("Esta es mi miVariableEntera: " + miVariableEntera);
         
+        miVariableEntera = 38;
+        System.out.println("Esta es mi miVariableEntera: " + miVariableEntera);
+        
+        String miVariableCadena = "Cumbi Tara Nar";
+        System.out.println("Me llamo " + miVariableCadena);
+        
+        miVariableCadena = "Esta es otra cadena";
+        System.out.println("Variable modificada: " + miVariableCadena);
+        
+        
+        
+        
     }
 }
