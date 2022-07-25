@@ -12,6 +12,10 @@ package com.mycompany.intro;
 public class Intro {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hola Cumbi");
+        
+        int miVariableEntera = 5838;
+        System.out.println("Esta es mi miVariableEntera: " + miVariableEntera);
+        
     }
 }
