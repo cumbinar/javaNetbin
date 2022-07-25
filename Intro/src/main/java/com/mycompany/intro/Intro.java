@@ -26,8 +26,23 @@ public class Intro {
         miVariableCadena = "Esta es otra cadena";
         System.out.println("Variable modificada: " + miVariableCadena);
         
+        var nuevaVariable = 1940.210;  //Se puede definir una variable con la palabra reservada var
+                                       // java la inf iere a partir del literal 1940.21
+        System.out.println("nueva Variable con var: " + nuevaVariable ); 
         
+        var cadena = "Variable cadena con palabra reservada var";
+        System.out.println(cadena);
         
+        var nombre = "Filomeno Champutis Mayagues";
+        System.out.println("nombre = " + nombre);
         
+        System.out.println("Concatenación " + cadena + " concatenada con  " + nombre);
+        
+        //valores permitidos en el nombre de nuestras variables:
+        var miVariable = true;
+        var _miVariable = "Cumbi";
+        var $miVariable = 19.34;
+        
+          
     }
 }
