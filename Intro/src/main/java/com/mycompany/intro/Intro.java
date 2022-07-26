@@ -49,16 +49,15 @@ public class Intro {
 
         var nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
         System.out.println("Nombre competo = " + nombreCompleto);
-        
+
         //contexto cadena Si primero encuentra una cadena, lo siguiente será cadena:
-        
         var i = 7;
         var j = 10;
-        System.out.println("Contexto cadena"+ nombre + " "+ i + " "+ j);
-        
+        System.out.println("Contexto cadena" + nombre + " " + i + " " + j);
+
         System.out.println(i + j + " " + nombre);
-        
-        System.out.println(nombre + " " + (i+j)); //el paréntesis es prioritario
+
+        System.out.println(nombre + " " + (i + j)); //el paréntesis es prioritario
 
     }
 }
