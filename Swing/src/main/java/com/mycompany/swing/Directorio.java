@@ -9,7 +9,7 @@ package com.mycompany.swing;
  *
  * @author educu
  */
-public class Swing {
+public class Directorio {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
