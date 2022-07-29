@@ -8,6 +8,6 @@ package modelo;
  *
  * @author educu
  */
-public class Consulta extends Conexion{
+public class Consulta{
       
 }  
