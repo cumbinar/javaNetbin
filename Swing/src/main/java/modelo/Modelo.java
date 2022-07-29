@@ -9,5 +9,5 @@ package modelo;
  * @author educu
  */
 public class Modelo {
-    
+
 }

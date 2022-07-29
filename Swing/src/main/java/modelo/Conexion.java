@@ -4,10 +4,13 @@
  */
 package modelo;
 
+
 /**
  *
  * @author educu
  */
 public class Conexion {
+
     
+
 }
