@@ -4,10 +4,16 @@
  */
 package modelo;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 /**
  *
  * @author educu
  */
-public class Consulta{
-      
+public class Consulta extends Conexion{
+      public Consulta(){
+      super();
+      }
 }  
