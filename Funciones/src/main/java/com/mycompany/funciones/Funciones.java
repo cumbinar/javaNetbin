@@ -16,6 +16,8 @@ public class Funciones {
         int a = 10;
         int b = 25;
         System.out.println("el resultado sumar:  " + a + " + " + b + " es " + suma(a, b));
+        
+        mayorQue(a,b);
 
     }
 
@@ -24,8 +26,23 @@ public class Funciones {
     }
 
     public static int suma(int a, int b) {
-
         return a + b;
-
     }
+    
+    public static void mayorQue(int a, int b){
+        int mayor =0;
+         if (a>b){
+         mayor = a;
+         } else{
+          mayor = b;
+         };
+         
+         System.out.println("a=" + a + " , b="+ b + " El número mayor es: "+ mayor);
+    }
+    
+    
 }
+
+
+
+
