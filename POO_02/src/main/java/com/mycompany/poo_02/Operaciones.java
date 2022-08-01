@@ -39,15 +39,15 @@ public class Operaciones {
         multiplicar = numero1 * numero2;
     }
 
-    public void dividision() {
+    public void division() {
         dividir = numero1 / numero2;
     }
 
     public void muestraRsultados() {
-        System.out.println("La Suma de : " + numero1 + " + " + numero2 + " Es " + suma);
-        System.out.println("La Resta de : " + numero1 + " - " + numero2 + " Es " + resta);
-        System.out.println("La División de : " + numero1 + " / " + numero2 + " Es " + dividir);
-        System.out.println("La Multiplicación de : " + numero1 + " * " + numero2 + " Es " + multiplicar);
+        System.out.println("La Suma de : " + numero1 + " + " + numero2 + " Es => " + suma);
+        System.out.println("La Resta de : " + numero1 + " - " + numero2 + " Es => " + resta);
+        System.out.println("La División de : " + numero1 + " / " + numero2 + " Es => " + dividir);
+        System.out.println("La Multiplicación de : " + numero1 + " * " + numero2 + " Es => " + multiplicar);
 
     }
 }

@@ -12,5 +12,11 @@ public class Main {
     public static void main(String [] args){
     Operaciones calcular = new Operaciones(); //se instancia la clase Operaciones
     calcular.leerNumeros();
+    calcular.sumar();
+    calcular.restar();
+    calcular.multiplicacion();
+    calcular.division();
+    calcular.muestraRsultados();
+    
     }
 }
