@@ -23,8 +23,8 @@ public class Operaciones {
     //Métodos
     //Método para pedir al usuario dos números
     public void leerNumeros() {
-        numero1 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el primer número: "));
-        numero2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el primer número: "));
+        numero1 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el Primer número: "));
+        numero2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el Segundo número: "));
     }
 
     public void sumar() {
