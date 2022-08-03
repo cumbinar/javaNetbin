@@ -30,4 +30,11 @@ public class Operacion {
         return dividir;
     }
 
+    public void mostrarResultados(float numero1, float numero2, float suma, float resta, float multiplicar, float dividir){
+    
+        System.out.println("La Suma de : " + numero1 + " + " + numero2 + " Es => " + suma);
+        System.out.println("La Resta de : " + numero1 + " - " + numero2 + " Es => " + resta);
+        System.out.println("La División de : " + numero1 + " / " + numero2 + " Es => " + dividir);
+        System.out.println("La Multiplicación de : " + numero1 + " * " + numero2 + " Es => " + multiplicar);
+    }
 }
