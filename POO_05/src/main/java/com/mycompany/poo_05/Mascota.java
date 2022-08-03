@@ -9,6 +9,7 @@ package com.mycompany.poo_05;
  * @author educu
  */
 public class Mascota {
+
     String nombre;
     String especie;
     int edad;
@@ -18,14 +19,14 @@ public class Mascota {
         this.especie = especie;
         this.edad = edad;
     }
-    
-    public void  mostrarDatos(){
-        System.out.println("El nombre de la mascota es: "+ nombre);
-        System.out.println("La especie es: "+ especie);
-        System.out.println("La edad es"+ edad);
+
+    public void mostrarDatos() {
+        System.out.println("El nombre de la mascota es: " + nombre);
+        System.out.println("La especie es: " + especie);
+        System.out.println("La edad es: " + edad);
     }
-    
-    public void comer(){
-        System.out.println("La mascota"+nombre+" Especie: "+ especie + " , está comiendo");
+
+    public void comer() {
+        System.out.println("La mascota " + nombre + " Especie: " + especie + " , está comiendo");
     }
 }
