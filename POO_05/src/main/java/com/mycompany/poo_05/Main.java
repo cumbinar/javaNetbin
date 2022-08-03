@@ -9,5 +9,9 @@ package com.mycompany.poo_05;
  * @author educu
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        Persona cumbi = new Persona("Cumbi Tara Nar", 62);
+        
+        cumbi.mostrarDatos();
+    }
 }
