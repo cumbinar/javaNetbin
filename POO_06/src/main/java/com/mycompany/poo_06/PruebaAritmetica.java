@@ -10,14 +10,14 @@ package com.mycompany.poo_06;
  */
 public class PruebaAritmetica {
 
-    float numero1;
-    float numero2;
+    double numero1;
+    double numero2;
 
-    public void sumarConArgumentos(float arg1, float arg2) {
+    public void sumarConArgumentos(double arg1, double arg2) {
 
         numero1 = arg1;
         numero2 = arg2;
-        float suma = arg1 + arg2;
+        double suma = arg1 + arg2;
         System.out.println("El resultado de sumar " + numero1 + " + " + numero2 + " es => " + suma);
     }
 }
