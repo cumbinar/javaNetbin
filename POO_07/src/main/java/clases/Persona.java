@@ -9,8 +9,8 @@ package clases;
  * @author educu
  */
 public class Persona {
-    String nombre;
-    String apellido;
+    public String nombre;
+    public String apellido;
     
     public void desplegarInformacion(){
         System.out.println("tu nombre es "+ nombre + " y tu aplellido es "+ apellido);
