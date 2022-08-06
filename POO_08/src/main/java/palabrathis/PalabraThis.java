@@ -10,8 +10,16 @@ package palabrathis;
  */
 public class PalabraThis {
     public static void main(String[] args) {
-        
+        Persona persona = new Persona("Cumbi", "Tara");
     }
 }
 
+class Persona{
+String nombre;
+String apellido;
 
+Persona(String nombre, String apellido){
+this.nombre = nombre;
+this.apellido = apellido;
+}
+}
