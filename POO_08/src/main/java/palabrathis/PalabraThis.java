@@ -15,6 +15,13 @@ public class PalabraThis {
         System.out.println("Esta es la dirección de memoria y package del objeto persona");
         System.out.println("Datos de persona => " + persona);
         System.out.println("Tu nombre es =>  " + persona.nombre + " y tu apellido es => " + persona.apellido);
+        
+        System.out.println("");
+        
+        Persona persona2 = new Persona("Chistan", "Tirubio");
+        System.out.println("Esta es la dirección de memoria y package del objeto persona");
+        System.out.println("Datos de persona => " + persona2);
+        System.out.println("Tu nombre es =>  " + persona2.nombre + " y tu apellido es => " + persona2.apellido);
     }
 }
 
@@ -26,5 +33,6 @@ class Persona {
     Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
+        System.out.println("Mostrar objeto persona empleando this => " + this);
     }
 }
