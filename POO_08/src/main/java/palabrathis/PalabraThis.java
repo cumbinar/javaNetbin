@@ -9,17 +9,22 @@ package palabrathis;
  * @author educu
  */
 public class PalabraThis {
+
     public static void main(String[] args) {
         Persona persona = new Persona("Cumbi", "Tara");
+        System.out.println("Esta es la dirección de memoria y package del objeto persona");
+        System.out.println("Datos de persona => " + persona);
+        System.out.println("Tu nombre es =>  " + persona.nombre + " y tu apellido es => " + persona.apellido);
     }
 }
 
-class Persona{
-String nombre;
-String apellido;
+class Persona {
 
-Persona(String nombre, String apellido){
-this.nombre = nombre;
-this.apellido = apellido;
-}
+    String nombre;
+    String apellido;
+
+    Persona(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
 }
