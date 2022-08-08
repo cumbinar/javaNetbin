@@ -17,6 +17,8 @@ public class Persona {
     this.nombre = nombre;
     this.sueldo = sueldo;
     this.eliminado = eliminado;
+    
+    
         
     }
 
@@ -44,4 +46,9 @@ public class Persona {
         this.eliminado = eliminado;
     }
     
+    public String toString(){
+    return "Nombre => "+ this.nombre+
+           ", Sueldo => "+ this.sueldo+
+            " ¿Está eliminada? => "+ this.isEliminado();
+    }
 }

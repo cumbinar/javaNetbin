@@ -22,7 +22,17 @@ public class PersonaPrueba {
         System.out.println("");
         System.out.println("Nombre => " + persona1.getNombre());
         System.out.println("Sueldo => " + persona1.getSueldo());
-        System.out.println("El estado de persona1 ¿Está eliminada? => " + persona1.isEliminado());
+        System.out.println("El estado de persona ¿Está eliminada? => " + persona1.isEliminado());
+        
+        persona1.toString();
+        
+        Persona persona2 = new Persona("Petrosky Gustavo", 35000, false);
+        persona2.toString();
+        
+        Persona persona3 = new Persona("Rupertino", 900000, false);
+        System.out.println("Los datos de la Persona1 son  "+ persona1);
+        System.out.println("Los datos de la Persona2 son  "+ persona2);
+        System.out.println("Los datos de la Persona3 son  "+ persona3);
 
     }
 }
