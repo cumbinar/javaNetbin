@@ -30,9 +30,12 @@ public class PersonaPrueba {
         persona2.toString();
         
         Persona persona3 = new Persona("Rupertino", 900000, false);
+        Persona persona4 = new Persona("balvina", 40000, false);
+        
         System.out.println("Los datos de la Persona1 son  "+ persona1);
         System.out.println("Los datos de la Persona2 son  "+ persona2);
         System.out.println("Los datos de la Persona3 son  "+ persona3);
+        System.out.println("Los datos de la Persona4 son  "+ persona4);
 
     }
 }
