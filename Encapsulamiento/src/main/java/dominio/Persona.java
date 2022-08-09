@@ -46,6 +46,11 @@ public class Persona {
         this.eliminado = eliminado;
     }
     
+    
+    public static void imprimir(Persona persona){
+        System.out.println("Esta persona " + persona);
+    
+    }
     public String toString(){
     return "Nombre => "+ this.nombre+
            ", Sueldo => "+ this.sueldo+
