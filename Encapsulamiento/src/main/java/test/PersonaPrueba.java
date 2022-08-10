@@ -38,6 +38,9 @@ public class PersonaPrueba {
         System.out.println("Los datos de la Persona4 son  "+ persona4);
         
         persona4.imprimir(persona4);
+        persona3.imprimir(persona3);
+        persona2.imprimir(persona2);
+        persona1.imprimir(persona1);
 
     }
 }
