@@ -10,9 +10,9 @@ package domain;
  */
 public class Persona {
     protected String nombre;
-    private char genero;
-    private int edad;
-    private String direccion;
+    protected char genero;
+    protected int edad;
+    protected String direccion;
     
     public Persona(){
     
