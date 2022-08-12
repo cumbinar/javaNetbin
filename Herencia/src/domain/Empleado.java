@@ -8,6 +8,6 @@ package domain;
  *
  * @author educu
  */
-public class Empleado {
+public class Empleado extends Persona{
     
 }
