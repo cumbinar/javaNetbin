@@ -11,7 +11,7 @@ import domain.Empleado;
  */
 public class TestHerencia {
     public static void main(String[] args) {
-       Empleado empleado1 = new Empleado();
+       Empleado empleado1 = new Empleado("Cumbi", 131313.23);
         System.out.println("empleado1"+empleado1);
     }
 }
