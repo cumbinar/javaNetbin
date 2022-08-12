@@ -9,7 +9,7 @@ package domain;
  * @author educu
  */
 public class Persona {
-    private String nombre;
+    protected String nombre;
     private char genero;
     private int edad;
     private String direccion;
