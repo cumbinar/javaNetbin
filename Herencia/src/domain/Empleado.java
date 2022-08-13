@@ -8,14 +8,15 @@ package domain;
  *
  * @author educu
  */
-public class Empleado extends Persona{
+public class Empleado extends Persona {
+
     private int idEmpleado;
     private double sueldo;
     private static int contadorEmpleado;
 
     public Empleado(String nombre, double sueldo) {
-       super(nombre);
-       this.idEmpleado = ++ Empleado.contadorEmpleado;
+        super(nombre);
+        this.idEmpleado = ++Empleado.contadorEmpleado;
         this.sueldo = sueldo;
     }
 
@@ -35,11 +36,11 @@ public class Empleado extends Persona{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Empleado{");
-        sb.append("idEmpleado=").append(this.idEmpleado);
-        sb.append(", sueldo=").append(this.sueldo);
-        sb.append(", nombre=").append(this.nombre);
+        sb.append("idEmpleado = ").append(this.idEmpleado);
+        sb.append(", sueldo = ").append(this.sueldo);
+        sb.append(", Persona {").append(super.toString());
         sb.append('}');
         return sb.toString();
     }
-    
+
 }
