@@ -50,9 +50,9 @@ public class Cliente extends Persona {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Cliente{");
-        sb.append("idCliente=").append(idCliente);
-        sb.append(", fechaRegistro=").append(fechaRegistro);
-        sb.append(", vip=").append(vip);
+        sb.append("idCliente = ").append(idCliente);
+        sb.append(", fechaRegistro = ").append(fechaRegistro);
+        sb.append(", vip = ").append(vip);
         sb.append('}').append(super.toString());
         sb.append('}');
         return sb.toString();
