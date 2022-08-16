@@ -19,4 +19,9 @@ public class Operaciones {
         System.out.println("sumar(double a, double b)");
         return a + b;
     }
+    
+    public static float sumar(float a, float b) {
+        System.out.println("sumar(float a, float b)");
+        return a + b;
+    }
 }
