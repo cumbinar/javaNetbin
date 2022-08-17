@@ -10,9 +10,12 @@ package sumar;
  */
 public class Sumar {
 
-    public static float sumando(float a, float b) {
+    public static void sumando(float a, float b) {
         float suma = a + b;
-        return suma;
+        System.out.println("la suma es "+ suma);
+      
     }
-
+ public static void imprimiendo(String s) {
+        System.out.println(s);
+    }
 }
