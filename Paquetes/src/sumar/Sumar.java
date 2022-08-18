@@ -14,11 +14,13 @@ public class Sumar {
         float suma = a + b;
         float resta = a -b;
         float multiplicar = a*b;
-        float 
+        float dividir = a/b;
         
         System.out.println("Los números son: "+ a+" y "+ b);
         System.out.println("la suma es "+ suma);
         System.out.println("La resta es "+resta);
+        System.out.println("La multiplicación es: "+ multiplicar);
+        System.out.println("La división es: "+ dividir);
       
     }
     
