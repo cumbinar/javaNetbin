@@ -13,8 +13,10 @@ public class Sumar {
     public static void sumando(float a, float b) {
         float suma = a + b;
         float resta = a -b;
+        float multiplicar = a*b;
+        float 
         
-        
+        System.out.println("Los números son: "+ a+" y "+ b);
         System.out.println("la suma es "+ suma);
         System.out.println("La resta es "+resta);
       
