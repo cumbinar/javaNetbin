@@ -4,17 +4,22 @@
  */
 package clientes_crud;
 
+import com.mysql.jdbc.Connection;
+
 /**
  *
  * @author educu
  */
 public class frmPanelClientes extends javax.swing.JFrame {
 
+    conexionMysql con = new conexionMysql();
+    Connection cn = con.conectar();
     /**
      * Creates new form frmPanelClientes
      */
     public frmPanelClientes() {
         initComponents();
+        mostrarDatos();
     }
 
     /**
@@ -302,4 +307,8 @@ public class frmPanelClientes extends javax.swing.JFrame {
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txttel;
     // End of variables declaration//GEN-END:variables
+
+    private void mostrarDatos() {
+        
+    }
 }
