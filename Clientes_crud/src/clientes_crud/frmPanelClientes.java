@@ -5,6 +5,10 @@
 package clientes_crud;
 
 import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -14,10 +18,11 @@ public class frmPanelClientes extends javax.swing.JFrame {
 
     conexionMysql con = new conexionMysql();
     Connection cn = con.conectar();
+
     /**
      * Creates new form frmPanelClientes
      */
-    public frmPanelClientes() {
+    public frmPanelClientes() throws java.sql.SQLException {
         initComponents();
         mostrarDatos();
     }
@@ -181,7 +186,7 @@ public class frmPanelClientes extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 692, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -220,7 +225,7 @@ public class frmPanelClientes extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -287,7 +292,11 @@ public class frmPanelClientes extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmPanelClientes().setVisible(true);
+                try {
+                    new frmPanelClientes().setVisible(true);
+                } catch (java.sql.SQLException ex) {
+                    Logger.getLogger(frmPanelClientes.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }
@@ -308,7 +317,36 @@ public class frmPanelClientes extends javax.swing.JFrame {
     private javax.swing.JTextField txttel;
     // End of variables declaration//GEN-END:variables
 
-    private void mostrarDatos() {
-        
+    private void mostrarDatos() throws java.sql.SQLException {
+        DefaultTableModel modelo = new DefaultTableModel();
+        modelo.addColumn("id");
+        modelo.addColumn("Nombres y apellidos");
+        modelo.addColumn("Dirección");
+        modelo.addColumn("email");
+        modelo.addColumn("Teléfono");
+        modelo.addColumn("Estado Civil");
+        jtabledatos.setModel(modelo);
+        String consultasql = "select*from clientes";
+        String data[] = new String[6];
+      
+      
+  
+        /* Statement st;
+        try{
+        st = cn.createStatement();
+        ResultSet rs = st.executeQuery(consultasql);
+        while (rs.next()) {
+            data[0] = rs.getString(1);
+            data[1] = rs.getString(2);
+            data[2] = rs.getString(3);
+            data[3] = rs.getString(4);
+            data[4] = rs.getString(5);
+            data[5] = rs.getString(6);
+            modelo.addRow(data);
+        }
+        }catch (SQLException e){
+                System.out.println("Error al mostrar datos "+ e);
+                }*/
     }
 }
+
