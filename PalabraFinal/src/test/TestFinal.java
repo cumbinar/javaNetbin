@@ -9,5 +9,9 @@ package test;
  * @author educu
  */
 public class TestFinal {
-    
+    public static void main(String[] args) {
+        final int miVariable = 10;  //con final miVariable se convierte en una constante y no se puede modificar
+        System.out.println("miVariable "+ miVariable);
+        
+    }
 }
